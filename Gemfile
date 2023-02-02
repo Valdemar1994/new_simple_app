@@ -6,6 +6,8 @@ ruby "3.0.2"
 # Bundle edge Rails instead: gem "rails", github: "rails/rails", branch: "main"
 gem "rails", "~> 7.0.4"
 
+gem 'bcrypt'
+
 gem 'bootstrap-sass'
 
 gem "pry"
@@ -76,4 +78,5 @@ group :test do
   gem "webdrivers"
   gem "rspec-rails"
   gem 'rails-controller-testing'
+  gem 'shoulda-matchers'
 end
