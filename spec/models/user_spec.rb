@@ -18,6 +18,5 @@ RSpec.describe User, type: :model do
   it { is_expected.to validate_length_of(:password).is_at_least(6) }
 
   # it { should validate_uniqueness_of(:email).ignoring_case_sensitivity } 
-
   # it { should validate_format_of(:email).with(User::VALID_EMAIL_REGEX) }
 end
