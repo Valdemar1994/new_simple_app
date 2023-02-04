@@ -9,6 +9,9 @@ gem "rails", "~> 7.0.4"
 gem 'bcrypt'
 
 gem 'bootstrap-sass'
+gem 'sassc-rails'
+
+gem 'jquery-rails'
 
 gem "pry"
 # gem "mail", "~> 2.7.1"
