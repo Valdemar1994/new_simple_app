@@ -11,6 +11,10 @@ gem 'bcrypt'
 gem 'bootstrap-sass'
 gem 'sassc-rails'
 
+gem 'faker'
+gem 'will_paginate'
+gem 'bootstrap-will_paginate'
+
 gem 'jquery-rails'
 
 gem "pry"
