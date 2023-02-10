@@ -12,6 +12,11 @@ gem 'bootstrap-sass'
 gem 'sassc-rails'
 
 gem 'faker'
+
+gem 'carrierwave'
+gem 'mini_magick'
+gem 'fog', "~> 2.3.0"
+
 gem 'will_paginate'
 gem 'bootstrap-will_paginate'
 

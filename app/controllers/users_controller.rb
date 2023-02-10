@@ -13,7 +13,7 @@ class UsersController < ApplicationController
 
   def show
     @user = User.find(params[:id])
-    @microposts = @user.microposts.order(created_at: :desc).paginate(page: params[:page], per_page: 15)
+    @microposts = @user.microposts.paginate(page: params[:page], per_page: 15)
   end
 
   def create
