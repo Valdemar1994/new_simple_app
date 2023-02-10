@@ -17,7 +17,7 @@ class SessionsController < ApplicationController
       end
     else
       flash[:danger] = 'Invalid email/password combination'
-      render 'new'
+      render 'new', status: :unprocessable_entity
     end
   end
 
