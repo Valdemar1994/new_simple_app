@@ -20,8 +20,16 @@ ActiveRecord::Base.transaction do
   end
 
   users = User.order(:created_at).take(6)
-  20.times do
+  10.times do
     content = Faker::Lorem.sentence
     users.each { |user| user.microposts.create!(content: content) }
   end
+
+  # Взаимоотношения
+  users = User.all
+  user  = users.first
+  following = users[2..9]
+  followers = users[3..8]
+  following.each { |followed| user.follow(followed) }
+  followers.each { |follower| follower.follow(user) }
 end

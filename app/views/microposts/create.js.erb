@@ -1,0 +1,2 @@
+$("#micropost_form").html("<%= escape_javascript(render('microposts/micropost')) %>");
+$("#microposts").html('<%= @user.microposts.count %>');
